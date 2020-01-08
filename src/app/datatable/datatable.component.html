@@ -1,0 +1,21 @@
+
+
+<div style="text-align:left;width:500px;">
+  <table *ngIf="datasetexchangeRate">
+    <tr>
+      <th>Currency</th>
+      <th>Sale Rate NB</th>
+      <th>Purchase Rate NB</th>
+      <th>Sale Rate</th>
+      <th>Purchase Rate</th>
+    </tr>
+
+    <tr *ngFor="let item of datasetexchangeRate | keyvalue">
+      <td>{{ item.value.currency | json }}</td>
+      <td>{{ item.value.saleRateNB | json }}</td>
+      <td>{{ item.value.purchaseRateNB | json }}</td>
+      <td>{{ item.value.saleRate | json }}</td>
+      <td>{{ item.value.purchaseRate | json }}</td>
+    </tr>
+  </table>
+</div>
