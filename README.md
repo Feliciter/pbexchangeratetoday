@@ -1,4 +1,4 @@
-# Little Angular application -  Privatbank exchange rate today
+## Little Angular application -  Privatbank exchange rate today
 
 Use: Angular,API Privatbank
 
